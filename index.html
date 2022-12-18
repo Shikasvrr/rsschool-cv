@@ -6,26 +6,105 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <header>
-        <div class="menu">
-            <nav>
-                <ul>
-                    <li><a href="#">about me</a></li>
-                    <li><a href="#">contacts</a></li>
-                    <li><a href="#">experience</a></li>
-                    <li><a href="#">portfolio</a></li>
-                </ul>
-            </nav>
+        <div class="header" class="container">
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li><a href="#profile">Profile</a></li>
+                        <li><a href="#contacts">Contacts</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#education">Education</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
-    <main>
-        <section class="profile">
-            <div class="img"><img src="assets/img/загруженное.jpg" alt="myphoto"></div>
-            <div class="desc"><p>I'm student and i want to study web-development, so it's cause i'm here.</p></div>
+    <main class="container">
+        <section class="left">
+            <section class="profile" id="profile">
+                <div class="img"><img src="assets/img/загруженное.jpg" alt="myphoto"></div>
+                <div class="desc">
+                    <h1>Veranika Shykunets</h1>
+                    <p>I'm student and i want to study web-development, so it's cause i'm here. My english level - B2.</p>
+                </div>
+            </section>
+            <section class="contacts" id="contacts">
+                <h2>My contacts</h2>
+                <ul>
+                    <li>
+                        <a href="mailto:shikasvr13@gmail.com">
+                            <div class="social-item">
+                                <i class="fa fa-envelope"></i>
+                                <span>shikasvr13@gmail.com</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/shikasvr">
+                            <div class="social-item">
+                                <i class="fa fa-instagram"></i>
+                                <span>shikasvr</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <section class="skills" id="skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li>Html</li>
+                    <li>CSS</li>
+                    <li>Figma</li>
+                    <li>Adobe Photoshop</li>
+                    <li>Adobe illustator</li>
+                </ul>
+            </section>
+        </section>
+        <section class="right">
+            <section class="code">
+                <h2>Example of code</h2>
+                <pre>
+                    <code>
+function isDivideBy(number, a, b) {
+if ( (number % a == 0) & (number % b == 0)) {
+return true;
+} else return false;
+} 
+                    </code>
+                </pre>
+            </section>
+            <section class="experience" id="experience">
+                <h2>Work experience</h2>
+                <p>Development of tests in Python for science experiments</p>
+            </section>
+            <section class="education" id="education">
+                <h2>Education</h2>
+        <ul>
+            <li>Treining:web-design</li>
+            <li>Course:UX-UI design</li>
+            <li>Course:Web-development in Python</li>
+            <li>High Education:Jagellonian University (Culture and Media Management 2021-2024)</li>
+       </ul>
+            </section>
         </section>
     </main>
-    <footer></footer>
+    <footer class="container">
+        <div class="logo">
+            <a href="https://rs.school/js/">
+                <img src="assets/svg/rs_school_js.svg" alt="rs_school_js">
+            </a>
+        </div>
+        <div class="year">
+            <p>2022</p>
+        </div>
+        <div class="github">
+            <a href="https://github.com/Shikasvrr">Shikasvr</a>
+        </div>
+    </footer>
 </body>
 </html>
